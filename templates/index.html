@@ -1,0 +1,28 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <table border="1" align="center" bgcolor='lightblue'>
+            <tr>
+
+        <form method="POST" action="">
+            {% csrf_token %}
+            <th>First N0 </th>
+            <th>Second N0 </th>
+            <th>Action</th>
+            <th>Result</th>
+        </tr>
+        <tr>
+            <td><input type="number" name="a" required/></td>
+            <td><input type="number" name="b" required/></td>
+            <td> <button name='k' value="ADD" >ADD</button>  <button name='k' value="SUB">SUB</button></td>
+            <td>{{ans}}</td>
+        </tr>
+            <br>
+        
+        </form>
+        
+    </body>
+</html>
